@@ -32,7 +32,7 @@
             <div class="navbar-form">
                 <a href="#/in_theaters/p1" class="btn btn-info">正在热映</a>
                 <a href="#/coming_soon/p1" class="btn btn-info">即将上映</a>
-                 <a href="#/top250/p1" class="btn btn-info">Top250</a>
+                <a href="#/top250/p1" class="btn btn-info">Top250</a>
             </div>
         </div>
     </div>
@@ -43,6 +43,16 @@
 
 <!--脚部-->
 <div class="page-header"></div>
+
+<!--遮罩层-->
+
+<div class="main-mask" ng-show="maskIf" ng-controller="searchController">
+    <p>由于Github是https协议，而请求的豆瓣API为http协议，</p>
+    <p>浏览器阻止了不安全的行为！为了是您正常浏览网页效果，</p>
+    <p>请允许浏览器加载不安全的脚本，或下载到本地浏览！</p>
+    <p class="btn btn-info" ng-click="noneMask()"> 确定 </p>
+</div>
+
 </body>
 
 <script src="//cdn.bootcss.com/angular.js/1.6.2/angular.min.js"></script>

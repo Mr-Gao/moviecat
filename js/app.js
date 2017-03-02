@@ -15,9 +15,13 @@
             }])
         .controller('searchController', ['$scope', '$route', function ($scope, $route) {
             $scope.searchText = '';
+            $scope.maskIf = true;
             $scope.search = function () {
                 $route.updateParams({q: $scope.searchText, page: 1, category: 'search'});
                 $scope.searchText = '';
             };
+            $scope.noneMask = function(){
+                $scope.maskIf = false;
+            }
         }]);
 })(angular);

@@ -4,6 +4,27 @@ body {
 .title-size {
     font-size: 22px;
 }
+.main-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+}
+.main-mask > p{
+    font-size: 30px;
+    font-family: 微软雅黑;
+    color: #fff;
+    margin-top: 20px;
+}
+.main-mask > p:nth-of-type(1){
+    margin-top: 300px;
+}
+.main-mask > p:nth-last-child(1){
+    font-size: 20px;
+}
 .douban-a {
     position: absolute;
     bottom: 5px;
